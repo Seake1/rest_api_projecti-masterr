@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valorant matches</title>
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="client.js"></script>
+</head>
+<body>
+<h1>Input match data</h1>
+<form>
+    <input type="text" placeholder="GAMERTAG" style="text-transform: none">
+    <input type="number" placeholder="Kills" id="kill">
+    <input type="number" placeholder="Assists" id="assist">
+    <input type="number" placeholder="Deaths" id="death">
+    <label>Did you win or lose?</label>
+    <select id="result">
+        <option value="Win">Win</option>
+        <option value="Loss">Loss</option>
+    </select>
+
+    <label>What character did you play?</label>
+    <select id="agent">
+        <option value="Astra">Astra</option>
+        <option value="Breach">Breach</option>
+        <option value="Brimstone">Brimstone</option>
+        <option value="Cypher">Brimstone</option>
+        <option value="Jett"> Jett</option>
+        <option value="Killjoy">Killjoy</option>
+        <option value="Omen">Omen</option>
+        <option value="Phoenix">Phoenix</option>
+        <option value="Raze">Raze</option>
+        <option value="Reyna"> Reyna</option>
+        <option value="Sage">Sage</option>
+        <option value="Skye">Skye</option>
+        <option value="Sova">Sova</option>
+        <option value="Viper"> Viper</option>
+        <option value="Yoru"> Yoru</option>
+    </select>
+
+    <label>What map did you play?</label>
+    <select id="m">
+        <option value="Bind">Bind</option>
+        <option value="Haven">Haven</option>
+        <option value="Split">Split</option>
+        <option value="Ascent">Ascent</option>
+        <option value="Icebox"> Icebox</option>
+        <option value="Breeze"> Icebox</option>
+    </select>
+
+
+    <button class="primary" type="button" onclick="createDB()">
+        <div class="label">
+            <span class="hover-effect"></span>
+            <span class="label-text">Create a database</span>
+        </div>
+    </button>
+
+    <button class="outline" type="button" onclick="submit" >
+        <div class="label">
+            <span class="hover-effect"></span>
+            <span class="label-text">Submit form</span>
+        </div>
+    </button>
+
+    <button class="outline red" value="Reset form">
+        <div class="label">
+            <span class="hover-effect"></span>
+            <span class="label-text">Reset form</span>
+        </div>
+    </button>
+
+
+<button class="outline" type="button" onclick="location.href='main.html'">
+    <div class="label">
+        <span class="hover-effect"></span>
+        <span class="label-text">Main page</span>
+    </div>
+</button>
+</form>
+</body>
+</html>
